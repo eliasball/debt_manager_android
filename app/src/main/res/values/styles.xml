@@ -1,0 +1,90 @@
+<resources>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="colorPrimaryDark">@color/primaryLightColor</item>
+        <item name="android:navigationBarColor">@color/primaryLightColor</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+
+        <!-- Color Customization -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorSurface">@color/primaryLightColor</item>
+        <item name="colorOnSurface">@color/primaryTextColor</item>
+        <item name="android:colorBackground">@color/primaryLightColor</item>
+        <item name="colorOnBackground">@color/primaryTextColor</item>
+        <item name="colorError">@color/errorColor</item>
+        <item name="colorOnError">@color/primaryTextColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+
+        <!-- Font Customization -->
+        <item name="fontFamily">@font/montserrat</item>
+
+        <!-- Dialog Customization -->
+        <item name="alertDialogTheme">@style/DialogStyle</item>
+        <item name="android:buttonStyle">@style/ToggleButtonGroupOverlay</item>
+
+        <!-- Shape Customization -->
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.LargeComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyApp.MediumComponent
+        </item>
+    </style>
+
+    <!--  Medium Shape Appearance  -->
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!--  Large Shape Appearance  -->
+    <style name="ShapeAppearance.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!--  The title display "App Name"  -->
+    <style name="TextAppearance.App.AppTitle" parent="TextAppearance.MaterialComponents.Headline6">
+    </style>
+
+    <!--  Styling for the preference list chooser  -->
+    <style name="DialogStyle" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="colorPrimary">?attr/colorSecondary</item>
+    </style>
+
+
+    <style name="Widget.App.Button.TextButton.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="materialThemeOverlay">@style/DialogButtonOverlay</item>
+    </style>
+
+    <!--  Make Dialog Button better readable  -->
+    <style name="DialogButtonOverlay" parent="">
+        <item name="colorPrimary">@android:color/darker_gray</item>
+    </style>
+
+    <!--  Make Toogle Button Group better readable  -->
+    <style name="ToggleButtonGroupOverlay" parent="">
+        <item name="colorPrimary">?attr/colorOnPrimary</item>
+    </style>
+
+    <!--  The outlined toggle buttons  -->
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="materialThemeOverlay">@style/ToggleButtonGroupOverlay</item>
+    </style>
+
+</resources>

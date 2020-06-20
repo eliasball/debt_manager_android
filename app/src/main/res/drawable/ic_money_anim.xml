@@ -1,0 +1,80 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="line"
+                android:pathData="M 23 8 L 23 18 C 23 18.53 22.789 19.039 22.414 19.414 C 22.039 19.789 21.53 20 21 20 L 5 20 C 4.735 20 4.48 19.895 4.293 19.707 C 4.105 19.52 4 19.265 4 19 C 4 18.735 4.105 18.48 4.293 18.293 C 4.48 18.105 4.735 18 5 18 L 21 18 L 21 8 C 21 7.735 21.105 7.48 21.293 7.293 C 21.48 7.105 21.735 7 22 7 C 22.265 7 22.52 7.105 22.707 7.293 C 22.895 7.48 23 7.735 23 8 Z"
+                android:fillColor="#000"
+                android:strokeWidth="1"/>
+            <path
+                android:name="sheet"
+                android:pathData="M 4 16 C 3.205 16 2.441 15.684 1.879 15.121 C 1.316 14.559 1 13.795 1 13 L 1 7 C 1 6.205 1.316 5.441 1.879 4.879 C 2.441 4.316 3.205 4 4 4 L 16 4 C 16.795 4 17.559 4.316 18.121 4.879 C 18.684 5.441 19 6.205 19 7 L 19 14 C 19 14.53 18.789 15.039 18.414 15.414 C 18.039 15.789 17.53 16 17 16 Z M 7 10 C 7 10.795 7.316 11.559 7.879 12.121 C 8.441 12.684 9.205 13 10 13 C 10.795 13 11.559 12.684 12.121 12.121 C 12.684 11.559 13 10.795 13 10 C 13 9.205 12.684 8.441 12.121 7.879 C 11.559 7.316 10.795 7 10 7 C 9.205 7 8.441 7.316 7.879 7.879 C 7.316 8.441 7 9.205 7 10 Z"
+                android:fillColor="#000"
+                android:strokeWidth="1"/>
+            <path
+                android:name="sheet_bottom"
+                android:pathData="M 8 20 C 7.205 20 6.441 19.684 5.879 19.121 C 5.316 18.559 5 17.795 5 17 L 5 11 C 5 10.205 5.316 9.441 5.879 8.879 C 6.441 8.316 7.205 8 8 8 L 20 8 C 20.795 8 21.559 8.316 22.121 8.879 C 22.684 9.441 23 10.205 23 11 L 23 18 C 23 18.53 22.789 19.039 22.414 19.414 C 22.039 19.789 21.53 20 21 20 Z M 11 14 C 11 14.795 11.316 15.559 11.879 16.121 C 12.441 16.684 13.205 17 14 17 C 14.795 17 15.559 16.684 16.121 16.121 C 16.684 15.559 17 14.795 17 14 C 17 13.205 16.684 12.441 16.121 11.879 C 15.559 11.316 14.795 11 14 11 C 13.205 11 12.441 11.316 11.879 11.879 C 11.316 12.441 11 13.205 11 14 Z"
+                android:fillColor="#000"
+                android:strokeWidth="1"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="sheet">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="fillAlpha"
+                android:duration="100"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/linear_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="sheet_bottom">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="1200"
+                    android:valueFrom="M 8 20 C 7.205 20 6.441 19.684 5.879 19.121 C 5.316 18.559 5 17.795 5 17 L 5 11 C 5 10.205 5.316 9.441 5.879 8.879 C 6.441 8.316 7.205 8 8 8 L 20 8 C 20.795 8 21.559 8.316 22.121 8.879 C 22.684 9.441 23 10.205 23 11 L 23 18 C 23 18.53 22.789 19.039 22.414 19.414 C 22.039 19.789 21.53 20 21 20 Z M 11 14 C 11 14.795 11.316 15.559 11.879 16.121 C 12.441 16.684 13.205 17 14 17 C 14.795 17 15.559 16.684 16.121 16.121 C 16.684 15.559 17 14.795 17 14 C 17 13.205 16.684 12.441 16.121 11.879 C 15.559 11.316 14.795 11 14 11 C 13.205 11 12.441 11.316 11.879 11.879 C 11.316 12.441 11 13.205 11 14 Z"
+                    android:valueTo="M 4 16 C 3.205 16 2.441 15.684 1.879 15.121 C 1.316 14.559 1 13.795 1 13 L 1 7 C 1 6.205 1.316 5.441 1.879 4.879 C 2.441 4.316 3.205 4 4 4 L 16 4 C 16.795 4 17.559 4.316 18.121 4.879 C 18.684 5.441 19 6.205 19 7 L 19 14 C 19 14.53 18.789 15.039 18.414 15.414 C 18.039 15.789 17.53 16 17 16 Z M 7 10 C 7 10.795 7.316 11.559 7.879 12.121 C 8.441 12.684 9.205 13 10 13 C 10.795 13 11.559 12.684 12.121 12.121 C 12.684 11.559 13 10.795 13 10 C 13 9.205 12.684 8.441 12.121 7.879 C 11.559 7.316 10.795 7 10 7 C 9.205 7 8.441 7.316 7.879 7.879 C 7.316 8.441 7 9.205 7 10 Z"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="fillAlpha"
+                    android:duration="1200"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="line">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="fillAlpha"
+                    android:duration="100"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+                <objectAnimator
+                    android:propertyName="fillAlpha"
+                    android:startOffset="500"
+                    android:duration="700"
+                    android:valueFrom="0"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

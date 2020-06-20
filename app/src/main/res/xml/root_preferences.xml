@@ -1,0 +1,63 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general">
+
+        <ListPreference
+            app:defaultValue="EUR"
+            app:dialogTitle="@string/choose_currency"
+            app:icon="@drawable/ic_money"
+            app:key="currency"
+            app:title="@string/currency_preference_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/feedback">
+        <Preference
+            app:icon="@drawable/ic_feedback"
+            app:key="send_feedback"
+            app:summary="@string/feedback_desc"
+            app:title="@string/send_feedback" />
+
+        <Preference
+            app:icon="@drawable/ic_star"
+            app:key="rate_pref"
+            app:summary="@string/rate_the_app_desc"
+            app:title="@string/rate_the_app" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/legal">
+
+        <Preference
+            app:icon="@drawable/ic_licenses"
+            app:key="licenses_pref"
+            app:summary="@string/attribution_licenses_desc"
+            app:title="@string/attribution_licenses" />
+
+        <Preference
+            app:icon="@drawable/ic_privacy"
+            app:key="terms_pref"
+            app:summary="@string/terms_and_conditions_desc"
+            app:title="@string/terms_and_conditions_title" />
+
+        <Preference
+            app:icon="@drawable/ic_privacy"
+            app:key="privacy_pref"
+            app:summary="@string/privacy_policy_desc"
+            app:title="@string/privacy_policy" />
+
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="dismiss_forever"
+        app:isPreferenceVisible="false" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="terms_and_privacy_accepted"
+        app:isPreferenceVisible="false" />
+
+</PreferenceScreen>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Debt Manager</string>
+
+    <!--  Activity titles  -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- The create debt dialog text -->
+    <string name="person_name">Person name</string>
+    <string name="reason_text">Reason</string>
+    <string name="amount_text">Amount (%s)</string>
+    <string name="objects_text">Objects</string>
+    <string name="error_text">Field required</string>
+
+    <!--  The fab text  -->
+    <string name="add_debt">Create</string>
+
+    <!--  The detail fragment texts  -->
+    <string name="count_text">x%d</string>
+    <string name="total_text">Total: %.2f %s</string>
+    <string name="total_empty_text">Total: -</string>
+
+    <!--  The debt card strings  -->
+    <string name="debt_amount">%.2f %s</string>
+
+    <!--  Preference strings  -->
+    <string name="currency_preference_title">Currency</string>
+    <string name="general">General</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_the_app">Rate the app</string>
+    <string name="rate_the_app_desc">Help us by leaving a good rating in the Store. You are very much appreciated :D</string>
+    <string name="legal">Legal</string>
+    <string name="attribution_licenses"><![CDATA[Attribution & Licenses]]></string>
+    <string name="attribution_licenses_desc">Awesome 3rd Party Content used throughout the app.</string>
+    <string name="choose_currency">Select your currency</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="feedback_desc">Let me know what you think, send suggestions, and ask questions!</string>
+    <string name="created_by">Created by</string>
+    <string name="find_me_on">Find me on</string>
+
+    <!--  Rate dialog  -->
+    <string name="send_feedback_action">Sorry to hear that, could  you tell us how we can help you?</string>
+    <string name="rate">Rate</string>
+    <string name="rate_action">Great to hear that! It would help us a lot if you could give us a rating in the Store!</string>
+    <string name="not_now">Not now</string>
+    <string name="how_would_you_rate_your_experience_so_far">How would you rate your experience so far?</string>
+    <string name="hey_there">Hey there!</string>
+    <string name="dont_show_again">Don\'t show again</string>
+
+    <!--  Content Descriptions  -->
+    <string name="money_icon_desc">Money Icon</string>
+    <string name="objects_icon_desc">Objects Icon</string>
+    <string name="fab_create_debt_desc">Create Debt</string>
+    <string name="back_desc">Back</string>
+    <string name="i_owe">I owe</string>
+    <string name="i_get">I get</string>
+    <string name="debt_payed_desc">Debt paid</string>
+    <string name="dismiss_desc">Dismiss</string>
+    <string name="type_money_desc">Type Money</string>
+    <string name="type_objects_desc">Type Objects</string>
+    <string name="save_debt_desc">Save Debt</string>
+    <string name="no_money_entries_desc">No money total</string>
+    <string name="profile_pic_desc">Developer Profile Picture</string>
+    <string name="empty_backdrop">Nothing to show, yet.\nTap the Create button to begin adding.</string>
+    <string name="create_new_debt_header">Create a new debt</string>
+    <string name="send_as_text">Send as text</string>
+    <string name="share_debt">Send debts as text</string>
+    <string name="change_debt_header">Edit debt</string>
+    <string name="wrong_number_entered">Something is wrong with the amount you entered, make sure you only use characters from 1–9 and \'.\'</string>
+    <string name="wrong_input">Wrong input.</string>
+    <string name="by_clicking_on_one_of_the_links_you_will_leave_the_app_and_a_browser_window_will_be_opened">By clicking on one of the links you will leave the app and a browser window will be opened.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!--  Entry screen  -->
+    <string name="app_icon_desc">app icon</string>
+    <string name="hey_there_elias_here">Hey there, Elias here!</string>
+    <string name="thank_you_very_much_for_downloading_and_using_my_app">Thank you very much\nfor downloading and using my app!</string>
+    <string name="theres_just_one_more_thing_before_we_get_started">There\'s just one more thing\nbefore we get started.</string>
+    <string name="please_read_and_accept_our">Please read and accept our</string>
+    <string name="privacy_policy_text">&#160;privacy policy.</string>
+    <string name="data_collection_reasons">We know the topic of privacy is a sensible and an important one. Therefore we will only collect data where needed and to enhance your user experience. And of course we will not sell any data whatsoever.</string>
+    <string name="i_have_read_and_accept_the_privacy_policy">I have read and accept the terms and conditions and the privacy policy.</string>
+    <string name="quit">Quit</string>
+    <string name="continue_button">Continue</string>
+    <string name="terms_and_conditions">&#160;terms and conditions</string>
+    <string name="and_our">and our</string>
+    <string name="terms_and_conditions_title">Terms and Conditions</string>
+    <string name="terms_and_conditions_desc">Review our terms and conditions.</string>
+    <string name="privacy_policy_desc">Review our privacy policy.</string>
+
+
+</resources>
